@@ -63,7 +63,7 @@ public class AddImageGeoFieldsAction extends SimpleAction {
 
 			ExpandoColumn latitude = ExpandoColumnLocalServiceUtil.addColumn(
 				expandoTable.getTableId(), "latitude",
-				ExpandoColumnConstants.NUMBER);
+				ExpandoColumnConstants.DOUBLE);
 
 			ExpandoColumnLocalServiceUtil.updateTypeSettings(
 					latitude.getColumnId(), properties.toString());
@@ -75,7 +75,7 @@ public class AddImageGeoFieldsAction extends SimpleAction {
 
 			ExpandoColumn longitude = ExpandoColumnLocalServiceUtil.addColumn(
 				expandoTable.getTableId(), "longitude",
-				ExpandoColumnConstants.NUMBER);
+				ExpandoColumnConstants.DOUBLE);
 
 			ExpandoColumnLocalServiceUtil.updateTypeSettings(
 					longitude.getColumnId(), properties.toString());
